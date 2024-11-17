@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>小宅站</title>
+      <link href="/2024/11/17/%E5%B0%8F%E5%AE%85%E7%AB%99/"/>
+      <url>/2024/11/17/%E5%B0%8F%E5%AE%85%E7%AB%99/</url>
+      
+        <content type="html"><![CDATA[<p>欢迎来到 [个人小破站]！<br>在这里，为你提供了一个独特平台，专注于所有与计算机生活方式相关的内容。从动漫、游戏到科技与创意产业，致力于为每一位感兴趣的朋友带来最新、最有趣的资讯与产品推荐。</p><p>使命<br>[个人小破站] 的使命是为宅男们打造一个专属的在线空间，无论你是对二次元世界有浓厚兴趣，还是热衷于最新的游戏技术，都为你提供多样化的内容，助你探索和享受宅生活的乐趣。</p><p>你可以在这里找到：<br>游戏世界：无论是最新的单机游戏还是网络多人游戏，我们为你推荐各种游戏及评测。<br>科技与数码：最新的电子产品评测、科技新闻，让你紧跟潮流，掌握最前沿的技术。<br>互动与社区<br>除了内容，还为你提供一个交流互动的平台。在这里，你可以和志同道合的宅友们分享心得、讨论最新的趋势，甚至参与我们的线上活动，结识更多的朋友。</p><p>加入我们，让[小破站] 成为你生活的一部分！无论你是一个资深宅男/宅女，还是刚刚开始了解这个世界的新人，都欢迎你的到来。<br>本站目前还在开发中，陆续会更新许多东西….</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2024/11/16/hello-world/"/>
+      <url>/2024/11/16/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
