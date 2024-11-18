@@ -1,569 +1,427 @@
-
-  <!DOCTYPE html>
-  <html lang="zh-CN"  >
-  <head>
-  <meta charset="utf-8">
-  
-
-  
-
-  
-
-  
-  <script>window.icon_font = '4552607_tq6stt6tcg';window.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};</script>
-  
-  
-  <title>
-    categories |
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="">
     
-    人机
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
-  
-    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_tq6stt6tcg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  
-  
-    
-<link rel="stylesheet" href="/css/loader.css">
-
-  
-  
     <meta name="description" content="大人">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="https://github.com/Larry-leee06/Larry-leee06.github.io.git/categories/index.html">
-<meta property="og:site_name" content="人机">
-<meta property="og:description" content="大人">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://github.com/images/banner.webp">
-<meta property="article:published_time" content="2024-11-17T08:52:01.000Z">
-<meta property="article:modified_time" content="2024-11-17T08:52:01.881Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/images/banner.webp">
-  
-  
-    <link rel="alternate" href="/atom.xml" title="人机" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/images/favicon.ico">
-  
-  
+    
+    
+    
+    
+    
+    
+    <title>categories | 人机</title>
+    <link href="https://github.com/Larry-leee06/Larry-leee06.github.io.git" rel="prefetch" />
+
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
 <link rel="stylesheet" href="/css/style.css">
 
-  <link rel="preload" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  
-  
-  
     
-<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+<script src="/js/jquery.min.js"></script>
 
-  
-  
     
-<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css">
+<script src="/js/bootstrap.min.js"></script>
 
-  
-<meta name="generator" content="Hexo 5.4.2"></head>
-
-  <body>
     
-  <div id='loader'>
-    <div class="loading-left-bg loading-bg"></div>
-    <div class="loading-right-bg loading-bg"></div>
-    <div class="spinner-box">
-      <div class="loading-taichi">
-        <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
-          <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="#ff5252" />
-          <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
-         M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="#ff5252" />
-        </svg>
-      </div>
-      <div class="loading-word">少女祈祷中...</div>
-    </div>
-  </div>
-  </div>
-  <script>
-    var time = null;
-    var startLoading = () => {
-      time = Date.now();
-      document.getElementById('loader').classList.remove("loading");
-    }
-    var endLoading = () => {
-      if (!time) {
-        document.body.style.overflow = 'auto';
-        document.getElementById('loader').classList.add("loading");
-      } else {
-        if (Date.now() - time > 500) {
-          time = null;
-          document.body.style.overflow = 'auto';
-          document.getElementById('loader').classList.add("loading");
-        } else {
-          setTimeout(endLoading, 500 - (Date.now() - time));
-          time = null;
+<script src="/js/aos.js"></script>
+
+    
+<script src="/js/highslide/highslide-full.min.js"></script>
+
+    
+<link rel="stylesheet" href="/js/highslide/highslide.css">
+
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
         }
       }
-    }
-    window.addEventListener('DOMContentLoaded', endLoading);
-    document.getElementById('loader').addEventListener('click', endLoading);
-  </script>
-
-<div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
-</div>
-
-
-    <div id="container">
-      <div id="wrap">
-        <div id="header-nav">
-  <nav id="main-nav">
+    </script>-->
+<meta name="generator" content="Hexo 5.4.2"></head>
+<body>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
     
-      <span class="main-nav-link-wrap">
-        <div class="main-nav-icon icon-taichi"></div>
-        <a class="main-nav-link" href="/%20%7C%7C%20fas%20fa-home">主页</a>
-      </span>
-    
-      <span class="main-nav-link-wrap">
-        <div class="main-nav-icon icon-taichi"></div>
-        <a class="main-nav-link" href="/%5Bobject%20Object%5D">博文 || fa fa-graduation-cap</a>
-      </span>
-    
-      <span class="main-nav-link-wrap">
-        <div class="main-nav-icon icon-taichi"></div>
-        <a class="main-nav-link" href="/%5Bobject%20Object%5D">生活 || fas fa-list</a>
-      </span>
-    
-      <span class="main-nav-link-wrap">
-        <div class="main-nav-icon icon-taichi"></div>
-        <a class="main-nav-link" href="/links/%20%7C%7C%20fa%20fa-link">友链</a>
-      </span>
-    
-      <span class="main-nav-link-wrap">
-        <div class="main-nav-icon icon-taichi"></div>
-        <a class="main-nav-link" href="/comment/%20%7C%7C%20fa%20fa-paper-plane">留言板</a>
-      </span>
-    
-      <span class="main-nav-link-wrap">
-        <div class="main-nav-icon icon-taichi"></div>
-        <a class="main-nav-link" href="/about/%20%7C%7C%20fas%20fa-heart">关于笔者</a>
-      </span>
-    
-    <a id="main-nav-toggle" class="nav-icon"></a>
-  </nav>
-  <nav id="sub-nav">
-    
-      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅" target="_blank"></a>
-    
-    
-    
-  </nav>
-</div>
-<header id="header">
-  
-    
-      <img fetchpriority="high" src="/images/touxiang.jpg" alt="categories">
-    
-  
-  <div id="header-outer">
-    <div id="header-title">
-      
-        
-        
-          <a href="/" id="logo">
-            <h1 data-aos="slide-up">categories</h1>
-          </a>
-        
-      
-      
-        
-        <h2 id="subtitle-wrap" data-aos="slide-down">
-          
-        </h2>
-      
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://github.com/Larry-leee06/Larry-leee06.github.io.git">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">人机</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="current">
+                    <a href="/categories">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                </li>
+                
+                
+                
+                
+                
+                <li class="">
+                    <a href="/tags">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
     </div>
-  </div>
 </header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    <!-- 搜索页面(尽可能接近ZanBlog搜索功能) -->
 
-        <div id="content">
-          
-          <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-inner" data-aos="fade-up">
-    <div class="article-meta">
-      <div class="article-date">
-  <a href="/categories/index.html" class="article-date-link" data-aos="zoom-in">
-    <time datetime="2024-11-17T08:52:01.000Z" itemprop="datePublished">2024-11-17</time>
-    <time style="display: none;" id="post-update-time">2024-11-17</time>
-  </a>
-</div>
 
-      
-
+<article class="article well article-body" id="article">
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/categories/index.html">categories</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2024-11-17
+            </span>
+        </div>
     </div>
-    <div class="hr-line"></div>
-    
-
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-      
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/categories/index.html">categories</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2024-11-17
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
         
-      
     </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-
 </article>
 
 
 
-
-
-
-</section>
-          
-            <aside id="sidebar">
-  <div class="sidebar-wrapper ">
-    <div class="sidebar-wrap" data-aos="fade-up">
-      
-        <div class="sidebar-author">
-  <img data-src="/avatar/source/_data/avatar/avatar.webp" data-sizes="auto" alt="" class="lazyload">
-  <div class="sidebar-author-name"></div>
-  <div class="sidebar-description">大人</div>
-</div>
-<div class="sidebar-state">
-  <div class="sidebar-state-article">
-    <div>文章</div>
-    <div class="sidebar-state-number">2</div>
-  </div>
-  <div class="sidebar-state-category">
-    <div>分类</div>
-    <div class="sidebar-state-number">0</div>
-  </div>
-  <div class="sidebar-state-tag">
-    <div>标签</div>
-    <div class="sidebar-state-number">0</div>
-  </div>
-</div>
-<div class="sidebar-social">
-  
-</div>
-<div class="sidebar-menu">
-  
-    <div class="sidebar-menu-link-wrap">
-      <a class="sidebar-menu-link-dummy" href="/%20%7C%7C%20fas%20fa-home" aria-label="主页"></a>
-      <div class="sidebar-menu-icon icon-taichi"></div>
-      <div class="sidebar-menu-link">主页</div>
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
     </div>
-  
-    <div class="sidebar-menu-link-wrap">
-      <a class="sidebar-menu-link-dummy" href="/%5Bobject%20Object%5D" aria-label="博文 || fa fa-graduation-cap"></a>
-      <div class="sidebar-menu-icon icon-taichi"></div>
-      <div class="sidebar-menu-link">博文 || fa fa-graduation-cap</div>
-    </div>
-  
-    <div class="sidebar-menu-link-wrap">
-      <a class="sidebar-menu-link-dummy" href="/%5Bobject%20Object%5D" aria-label="生活 || fas fa-list"></a>
-      <div class="sidebar-menu-icon icon-taichi"></div>
-      <div class="sidebar-menu-link">生活 || fas fa-list</div>
-    </div>
-  
-    <div class="sidebar-menu-link-wrap">
-      <a class="sidebar-menu-link-dummy" href="/links/%20%7C%7C%20fa%20fa-link" aria-label="友链"></a>
-      <div class="sidebar-menu-icon icon-taichi"></div>
-      <div class="sidebar-menu-link">友链</div>
-    </div>
-  
-    <div class="sidebar-menu-link-wrap">
-      <a class="sidebar-menu-link-dummy" href="/comment/%20%7C%7C%20fa%20fa-paper-plane" aria-label="留言板"></a>
-      <div class="sidebar-menu-icon icon-taichi"></div>
-      <div class="sidebar-menu-link">留言板</div>
-    </div>
-  
-    <div class="sidebar-menu-link-wrap">
-      <a class="sidebar-menu-link-dummy" href="/about/%20%7C%7C%20fas%20fa-heart" aria-label="关于笔者"></a>
-      <div class="sidebar-menu-icon icon-taichi"></div>
-      <div class="sidebar-menu-link">关于笔者</div>
-    </div>
-  
-</div>
-
-      
-      
-    </div>
-  </div>
-
-  
 </aside>
-
-          
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            
+            <i class="fa fa-quote-right"></i>
         </div>
-        <footer id="footer">
-  <div style="width: 100%; overflow: hidden">
-    <div class="footer-line"></div>
-  </div>
-  <div id="footer-info">
-    
-    <div>
-      <span class="icon-copyright"></span>
-      2020-2024
-      <span class="footer-info-sep"></span>
-      人机
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"><p>大人</p>
+</p>
+        </div>
     </div>
+</aside>
     
-      <div>
-        基于&nbsp;<a href="https://hexo.io/" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
-        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener external nofollow noreferrer" target="_blank">Reimu</a>
-      </div>
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
     
     
-      <div>
-        <span class="icon-brush"></span>
-        445
-        &nbsp;|&nbsp;
-        <span class="icon-coffee"></span>
-        00:02
-      </div>
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2024/11/17/%E5%B0%8F%E5%AE%85%E7%AB%99/">小宅站</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2024/11/16/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
     
     
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2024/11/16/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2024/11/17/%E5%B0%8F%E5%AE%85%E7%AB%99/">小宅站</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
     
     
-      <div>
-        <span class="icon-eye"></span>
-        <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
-        &nbsp;|&nbsp;
-        <span class="icon-user"></span>
-        <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
-      </div>
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+
+                
+                <li>
+                    <a href="/categories/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/categories/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/categories/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-  </div>
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                
+                
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+    </li>
+    
+    <li>
+        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+    </li>
+    
+</div>
+                
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018  Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
 </footer>
 
-        <div class="sidebar-top">
-          <img src="/images/taichi.png" height="50" width="50" alt="backtop" />
-          <div class="arrow-up"></div>
-        </div>
-        <div id="mask"></div>
-      </div>
-      <nav id="mobile-nav">
-  <div class="sidebar-wrap">
-    
-      <div class="sidebar-author">
-  <img data-src="/avatar/source/_data/avatar/avatar.webp" data-sizes="auto" alt="" class="lazyload">
-  <div class="sidebar-author-name"></div>
-  <div class="sidebar-description">大人</div>
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
 </div>
-<div class="sidebar-state">
-  <div class="sidebar-state-article">
-    <div>文章</div>
-    <div class="sidebar-state-number">2</div>
-  </div>
-  <div class="sidebar-state-category">
-    <div>分类</div>
-    <div class="sidebar-state-number">0</div>
-  </div>
-  <div class="sidebar-state-tag">
-    <div>标签</div>
-    <div class="sidebar-state-number">0</div>
-  </div>
-</div>
-<div class="sidebar-social">
-  
-</div>
-<div class="sidebar-menu">
-  
-    <div class="sidebar-menu-link-wrap">
-      <a class="sidebar-menu-link-dummy" href="/%20%7C%7C%20fas%20fa-home" aria-label="主页"></a>
-      <div class="sidebar-menu-icon icon-taichi"></div>
-      <div class="sidebar-menu-link">主页</div>
-    </div>
-  
-    <div class="sidebar-menu-link-wrap">
-      <a class="sidebar-menu-link-dummy" href="/%5Bobject%20Object%5D" aria-label="博文 || fa fa-graduation-cap"></a>
-      <div class="sidebar-menu-icon icon-taichi"></div>
-      <div class="sidebar-menu-link">博文 || fa fa-graduation-cap</div>
-    </div>
-  
-    <div class="sidebar-menu-link-wrap">
-      <a class="sidebar-menu-link-dummy" href="/%5Bobject%20Object%5D" aria-label="生活 || fas fa-list"></a>
-      <div class="sidebar-menu-icon icon-taichi"></div>
-      <div class="sidebar-menu-link">生活 || fas fa-list</div>
-    </div>
-  
-    <div class="sidebar-menu-link-wrap">
-      <a class="sidebar-menu-link-dummy" href="/links/%20%7C%7C%20fa%20fa-link" aria-label="友链"></a>
-      <div class="sidebar-menu-icon icon-taichi"></div>
-      <div class="sidebar-menu-link">友链</div>
-    </div>
-  
-    <div class="sidebar-menu-link-wrap">
-      <a class="sidebar-menu-link-dummy" href="/comment/%20%7C%7C%20fa%20fa-paper-plane" aria-label="留言板"></a>
-      <div class="sidebar-menu-icon icon-taichi"></div>
-      <div class="sidebar-menu-link">留言板</div>
-    </div>
-  
-    <div class="sidebar-menu-link-wrap">
-      <a class="sidebar-menu-link-dummy" href="/about/%20%7C%7C%20fas%20fa-heart" aria-label="关于笔者"></a>
-      <div class="sidebar-menu-icon icon-taichi"></div>
-      <div class="sidebar-menu-link">关于笔者</div>
-    </div>
-  
-</div>
+</body>
 
-    
-  </div>
-  
-</nav>
-
-    </div>
-    
-    
-<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
-
-
-<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-  
-<script src="/js/aos.js"></script>
-
-  <script>
-    var aosInit = () => {
-      AOS.init({
-        duration: 1000,
-        easing: "ease",
-        once: true,
-        offset: 50,
-      });
-    };
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', aosInit);
-    } else {
-      aosInit();
-    }
-  </script>
-
-
-
-<script src="/js/pjax_script.js" data-pjax></script>
-
-
-
-
-
-
-
-  
-<script src="https://npm.webcache.cn/mouse-firework@0.0.6/dist/index.umd.js" integrity="sha384-vkGvf25gm1C1PbcoD5dNfc137HzNL&#x2F;hr1RKA5HniJOaawtvUmH5lTVFgFAruE9Ge" crossorigin="anonymous"></script>
-
-  <script>
-    window.firework && window.firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["#ff5252","#ff7c7c","#ffafaf","#ffd0d0"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["#ff0000"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'))
-  </script>
-
-
-
-
-
-
-
-
-<div id="lazy-script">
-  <div>
-    
-    
-      
-        
-<script src="/js/insert_highlight.js" data-pjax></script>
-
-      
-    
-    
-      <script type="module" data-pjax>
-        const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
-        
-        const pswp = () => {
-          if (_$$('.article-entry a.article-gallery-item').length > 0) {
-            new PhotoSwipeLightbox({
-              gallery: '.article-entry',
-              children: 'a.article-gallery-item',
-              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
-            }).init();
-          }
-          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
-            new PhotoSwipeLightbox({
-              gallery: '.article-gallery',
-              children: 'a.article-gallery-item',
-              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
-            }).init();
-          }
-          window.lightboxStatus = 'done';
-          window.removeEventListener('lightbox:ready', pswp);
-        }
-        if(window.lightboxStatus === 'ready') {
-          pswp()
-        } else {
-          window.addEventListener('lightbox:ready', pswp);
-        }
-      </script>
-      
-
-
-
-
-
-
-
-
-    
-  </div>
-</div>
-
-
-  <script>
-    console.log(String.raw`%c 
- ______     ______     __     __    __     __  __    
-/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
-\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
- \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
-  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
-                                                  
-`,'color: #ff5252;')
-    console.log('%c Theme.Reimu v' + '0.3.4' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
-  </script>
-  
-
-
-
-  
-<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
-
-
-
+<script src="/js/activate-power-mode.js"></script>
 
 <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.getRegistrations().then((registrations) => {
-      for (let registration of registrations) {
-        registration.unregister();
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
       }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
     });
-  }
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
 </script>
 
-  </body>
-  </html>
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
 
+
+
+
+</html>
