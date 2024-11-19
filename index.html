@@ -5,7 +5,7 @@
   
   <title>人机的生活——小站首页 | 人机</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="/imgs/shortcut-icon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/imgs/001.ico" type="image/x-icon">
   <link rel="stylesheet" href="/css/public.css" />
   <link rel="stylesheet" href="/css/layout.css" />
   <link rel="stylesheet" href="/css/iconfont.css" />
@@ -219,7 +219,7 @@
           <div>
             <a href="/${post.path}">${post.title.replace(new RegExp(ipt.value), `<span>${ipt.value}</span>`)}</a>
           </div>
-          <img src="${post.cover || '/imgs/like.jpg' }" />
+          <img src="${post.cover || '/imgs/default-cover.webp' }" />
         </li>
       `
     })
@@ -372,7 +372,7 @@
       <div class="index-article">
         <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
         <div class="index-article--box">
-          <img class="index-article--cover" data-cover="imgs/default-cover.webp" alt="Hello World" />
+          <img class="index-article--cover" data-cover="imgs/hello.jpg" alt="Hello World" />
         </div>
         <div class="index-article--content">
           <a href="/2024/11/16/hello-world/">Hello World </a>
@@ -454,7 +454,7 @@
         imgDom.onerror = () => {
           box.classList.remove('img-loading');
           box.classList.add('img-error');
-          imgDom.src = '/imgs/404.png';
+          imgDom.src = '/imgs/404h.jpg';
         }
       }
     });

@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  background: url("/imgs/bg-cover.jpeg") repeat;
+  background: url("/imgs/shishi.gif") repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
   padding-top: 100px;
@@ -39,7 +39,7 @@
   opacity: 0.8;
   left: 0;
   top: 0;
-  background: url("/imgs/top-cover.jpeg") no-repeat;
+  background: url("/imgs/xingkong.jpg") no-repeat;
   background-size: cover;
 }
 .header-wrapper {
