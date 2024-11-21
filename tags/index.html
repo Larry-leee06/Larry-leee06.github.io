@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"小宅站","path":"2024/11/17/小宅站/"},{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"测试","path":"2024/11/21/测试/"}]`)
+  const posts = JSON.parse(`[{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"小宅站","path":"2024/11/17/小宅站/"},{"title":"测试","path":"2024/11/21/测试/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -416,7 +416,7 @@
   }
 
   setOperateItem()
-  const musics = JSON.parse(`[{"name":"晴天","artist":"周杰伦","url":"music/晴天.mp3","cover":"https://ts1.cn.mm.bing.net/th?id=OIP-C.SYhCcAiin2y_rs06vEEjGgHaEo&w=176&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"},{"name":"多余的解释","artist":"许嵩","url":"music/多余的解释.mp3","cover":"https://ts4.cn.mm.bing.net/th?id=OIP-C.QCKfSwnuvIeSx4fTv_ptHAAAAA&w=190&h=190&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"}]`)
+  const musics = JSON.parse(`[{"name":"晴天","artist":"周杰伦","url":"music/晴天.mp3","cover":"https://ts1.cn.mm.bing.net/th?id=OIP-C.SYhCcAiin2y_rs06vEEjGgHaEo&w=176&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"},{"name":"多余的解释","artist":"许嵩","url":"music/多余的解释.mp3","cover":"https://ts4.cn.mm.bing.net/th?id=OIP-C.QCKfSwnuvIeSx4fTv_ptHAAAAA&w=190&h=190&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"},{"name":"龙卷风","artist":"周杰伦","url":"music/龙卷风.mp3","cover":"/"}]`)
   const ap = new APlayer({
     container: document.querySelector('#aplayer'),
     audio: musics,
