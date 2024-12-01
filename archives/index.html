@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"大学英语","path":"2024/12/01/大学英语/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"高数","path":"2024/12/01/高数/"},{"title":"小宅站","path":"2024/11/17/小宅站/"}]`)
+  const posts = JSON.parse(`[{"title":"大学英语","path":"2024/12/01/大学英语/"},{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"小宅站","path":"2024/11/17/小宅站/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"高数","path":"2024/12/01/高数/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -258,7 +258,7 @@
       <div class="main-left--statics">
         <a href="/categories">
           <div>
-            <span>0</span>
+            <span>1</span>
             <span>分类</span>
           </div>
         </a>
@@ -362,13 +362,6 @@
                                     
                                         <li class="archive-list__post">
                                             <div>
-                                                <a href="/2024/11/21/太极拳/">太极拳</a>
-                                                <span>11月21日</span>
-                                            </div>
-                                        </li>
-                                    
-                                        <li class="archive-list__post">
-                                            <div>
                                                 <a href="/2024/11/16/hello-world/">Hello World</a>
                                                 <span>11月16日</span>
                                             </div>
@@ -378,6 +371,13 @@
                                             <div>
                                                 <a href="/2024/11/17/小宅站/">小宅站</a>
                                                 <span>11月17日</span>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="archive-list__post">
+                                            <div>
+                                                <a href="/2024/11/21/太极拳/">太极拳</a>
+                                                <span>11月21日</span>
                                             </div>
                                         </li>
                                     

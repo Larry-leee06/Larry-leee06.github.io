@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"大学英语","path":"2024/12/01/大学英语/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"高数","path":"2024/12/01/高数/"},{"title":"小宅站","path":"2024/11/17/小宅站/"}]`)
+  const posts = JSON.parse(`[{"title":"大学英语","path":"2024/12/01/大学英语/"},{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"小宅站","path":"2024/11/17/小宅站/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"高数","path":"2024/12/01/高数/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -258,7 +258,7 @@
       <div class="main-left--statics">
         <a href="/categories">
           <div>
-            <span>0</span>
+            <span>1</span>
             <span>分类</span>
           </div>
         </a>
@@ -376,7 +376,7 @@
   </div>
   <div class="index-right">
     <div class="index-right-wrapper">
-      
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%98%B2%E6%8C%82%E7%A7%91/">防挂科</a></li></ul>
       <ul class="tags" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E6%95%B0%E4%BF%9D%E5%91%BD/" rel="tag">高数保命</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BF%BB%E8%AF%91/" rel="tag">翻译</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%AA%E6%9E%81%E6%8B%B3/" rel="tag">太极拳</a></li></ul>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">2024年12月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">2024年11月</a><span class="archive-list-count">3</span></li></ul>
     </div>
