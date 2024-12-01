@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"高数","path":"2024/12/01/高数/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"小宅站","path":"2024/11/17/小宅站/"}]`)
+  const posts = JSON.parse(`[{"title":"大学英语","path":"2024/12/01/大学英语/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"高数","path":"2024/12/01/高数/"},{"title":"小宅站","path":"2024/11/17/小宅站/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -264,7 +264,7 @@
         </a>
         <a href="/tags">
           <div>
-            <span>2</span>
+            <span>3</span>
             <span>标签</span>
           </div>
         </a>
@@ -327,7 +327,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>4 篇</span>
+        <span>5 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
@@ -358,15 +358,15 @@
       <div class="index-article">
         <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
         <div class="index-article--box">
-          <img class="index-article--cover" data-cover="imgs/like.jpg" alt="高数" />
+          <img class="index-article--cover" data-cover="imgs/like.jpg" alt="大学英语" />
         </div>
         <div class="index-article--content">
-          <a href="/2024/12/01/%E9%AB%98%E6%95%B0/">高数 </a>
+          <a href="/2024/12/01/%E5%A4%A7%E5%AD%A6%E8%8B%B1%E8%AF%AD/">大学英语 </a>
           <div>
             
             
               <p>
-                <a class="-link" href="/tags/%E9%AB%98%E6%95%B0%E4%BF%9D%E5%91%BD/" rel="tag">高数保命</a>
+                <a class="-link" href="/tags/%E7%BF%BB%E8%AF%91/" rel="tag">翻译</a>
               </p>
             
           </div>
@@ -377,25 +377,7 @@
       <div class="index-article">
         <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
         <div class="index-article--box">
-          <img class="index-article--cover" data-cover="imgs/like.jpg" alt="小宅站" />
-        </div>
-        <div class="index-article--content">
-          <a href="/2024/11/17/%E5%B0%8F%E5%AE%85%E7%AB%99/">小宅站 </a>
-          <div>
-            
-            
-          </div>
-          <div class="bg"></div>
-        </div>
-      </div>
-    
-  </div>
-  <div class="index-center">
-    
-      <div class="index-article">
-        <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
-        <div class="index-article--box">
-          <img class="index-article--cover" data-cover="imgs/hello.jpg" alt="太极拳" />
+          <img class="index-article--cover" data-cover="imgs/like.jpg" alt="太极拳" />
         </div>
         <div class="index-article--content">
           <a href="/2024/11/21/%E5%A4%AA%E6%9E%81%E6%8B%B3/">太极拳 </a>
@@ -412,9 +394,9 @@
       </div>
     
       <div class="index-article">
-        <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
+        <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
         <div class="index-article--box">
-          <img class="index-article--cover" data-cover="imgs/hello.jpg" alt="Hello World" />
+          <img class="index-article--cover" data-cover="imgs/like.jpg" alt="Hello World" />
         </div>
         <div class="index-article--content">
           <a href="/2024/11/16/hello-world/">Hello World </a>
@@ -427,11 +409,48 @@
       </div>
     
   </div>
+  <div class="index-center">
+    
+      <div class="index-article">
+        <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="imgs/hello.jpg" alt="高数" />
+        </div>
+        <div class="index-article--content">
+          <a href="/2024/12/01/%E9%AB%98%E6%95%B0/">高数 </a>
+          <div>
+            
+            
+              <p>
+                <a class="-link" href="/tags/%E9%AB%98%E6%95%B0%E4%BF%9D%E5%91%BD/" rel="tag">高数保命</a>
+              </p>
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
+    
+      <div class="index-article">
+        <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="imgs/hello.jpg" alt="小宅站" />
+        </div>
+        <div class="index-article--content">
+          <a href="/2024/11/17/%E5%B0%8F%E5%AE%85%E7%AB%99/">小宅站 </a>
+          <div>
+            
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
+    
+  </div>
   <div class="index-right">
     <div class="index-right-wrapper">
       
-      <ul class="tags" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E6%95%B0%E4%BF%9D%E5%91%BD/" rel="tag">高数保命</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%AA%E6%9E%81%E6%8B%B3/" rel="tag">太极拳</a></li></ul>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">2024年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">2024年11月</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="tags" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E6%95%B0%E4%BF%9D%E5%91%BD/" rel="tag">高数保命</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BF%BB%E8%AF%91/" rel="tag">翻译</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%AA%E6%9E%81%E6%8B%B3/" rel="tag">太极拳</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">2024年12月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">2024年11月</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 </div>
