@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>人机的生活——高数 | 人机</title>
+  <title>人机的生活——高数不定积分 | 人机</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="/imgs/001.ico" type="image/x-icon">
   <link rel="stylesheet" href="/css/public.css" />
@@ -16,9 +16,9 @@
 
   <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   <script>
-    document.title = `人机的生活——高数`
+    document.title = `人机的生活——高数不定积分`
   </script>
-<meta name="generator" content="Hexo 5.4.2"></head>
+</head>
 
 <style>
   .load {
@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"个人介绍","path":"2024/12/01/个人介绍/"},{"title":"大学英语","path":"2024/12/01/大学英语/"},{"title":"做题记录","path":"2024/12/04/做题记录/"},{"title":"小宅站","path":"2024/11/17/小宅站/"},{"title":"高数","path":"2024/12/01/高数不定积分/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"Hello World","path":"2024/11/16/hello-world/"}]`)
+  const posts = JSON.parse(`[{"title":"个人介绍","path":"2024/12/01/个人介绍/"},{"title":"做题记录","path":"2024/12/04/做题记录/"},{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"大学英语","path":"2024/12/01/大学英语/"},{"title":"小宅站","path":"2024/11/17/小宅站/"},{"title":"高数不定积分","path":"2024/12/01/高数不定积分/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -335,7 +335,7 @@
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
-        <span>34天</span>
+        <span>39天</span>
       </p>
       <p class="main-left--subtitle">
         <span>当前版本：</span>
@@ -351,7 +351,7 @@
 
 <div class="article-container">
   <div class="article">
-    <h1 class="article-title">高数</h1>
+    <h1 class="article-title">高数不定积分</h1>
     <div class="article-info">
       <div class="article-info--item">
         <div class="article-info--info">
@@ -373,7 +373,363 @@
       </div>
     </div>
     <article class="article-content markdown-body">
-      <h1 id="不定积分"><a href="#不定积分" class="headerlink" title="不定积分"></a>不定积分</h1><h2 id="概念和性质"><a href="#概念和性质" class="headerlink" title="概念和性质"></a>概念和性质</h2><h3 id="定义1：如果在区间I上可导函数为F-x-的导函数为f-x-即对任意x-inI都有"><a href="#定义1：如果在区间I上可导函数为F-x-的导函数为f-x-即对任意x-inI都有" class="headerlink" title="定义1：如果在区间I上可导函数为F(x)的导函数为f(x),即对任意x\inI都有"></a>定义1：如果在区间I上可导函数为F(x)的导函数为f(x),即对任意x\inI都有</h3><h3 id="F-x-f-x-或dF-x-f-x-dx-那么函数F-x-就称为f-x-在区间I上的原函数。"><a href="#F-x-f-x-或dF-x-f-x-dx-那么函数F-x-就称为f-x-在区间I上的原函数。" class="headerlink" title="F(x)=f(x)或dF(x)=f(x)dx,那么函数F(x)就称为f(x)在区间I上的原函数。"></a>F(x)=f(x)或dF(x)=f(x)dx,那么函数F(x)就称为f(x)在区间I上的原函数。</h3>
+      <!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+    <title>??送给我的挚爱</title>
+</head>
+<body> <canvas id="canvas"></canvas>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+    <script type="text/javascript">
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+<pre><code>    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+
+    var texts = 'I LOVE U'.split('');
+
+    var fontSize = 16;
+    var columns = canvas.width / fontSize;
+    // 用于计算输出文字时坐标，所以长度即为列数
+    var drops = [];
+    //初始值
+    for (var x = 0; x &lt; columns; x++) &#123;
+        drops[x] = 1;
+    &#125;
+
+    function draw() &#123;
+        //让背景逐渐由透明到不透明
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        //文字颜色
+        ctx.fillStyle = '#f584b7';
+        ctx.font = fontSize + 'px arial';
+        //逐行输出文字
+        for (var i = 0; i &lt; drops.length; i++) &#123;
+            var text = texts[Math.floor(Math.random() * texts.length)];
+            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+            if (drops[i] * fontSize &gt; canvas.height || Math.random() &gt; 0.95) &#123;
+                drops[i] = 0;
+            &#125;
+
+            drops[i]++;
+        &#125;
+    &#125;
+    setInterval(draw, 33);
+&lt;/script&gt;
+</code></pre>
+</body>
+</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+    <TITLE> love</TITLE>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+    <meta charset="UTF-8">
+    <style>
+        html,
+        body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background: rgb(0, 0, 0);
+        }
+<pre><code>    canvas &#123;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    &#125;
+
+    #child &#123;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -75px;
+        margin-left: -100px;
+
+    &#125;
+
+    h4 &#123;
+        font-family: &quot;STKaiti&quot;;
+        font-size: 30px;
+        color: #f584b7;
+        position: relative;
+        top: -30px;
+        left: -65px;
+    &#125;
+
+&lt;/style&gt;
+</code></pre>
+</head>
+<body>
+    <div id="child">
+        <h4> Genshin is a game of miHoYo.</h4>
+    </div>
+    <!--这里写名字?！！！-->
+    <canvas id="pinkboard"></canvas>
+    <!-- <canvas id= "canvas"></canvas>  -->
+    <script>
+        /*
+       * Settings
+       */
+        var settings = {
+            particles: {
+                length: 500, // maximum amount of particles
+                duration: 2, // particle duration in sec
+                velocity: 100, // particle velocity in pixels/sec
+                effect: -0.75, // play with this for a nice effect
+                size: 30, // particle size in pixels
+            },
+        };
+<pre><code>    /*
+     * RequestAnimationFrame polyfill by Erik M?ller
+     */
+    (function () &#123; var b = 0; var c = [&quot;ms&quot;, &quot;moz&quot;, &quot;webkit&quot;, &quot;o&quot;]; for (var a = 0; a &lt; c.length &amp;&amp; !window.requestAnimationFrame; ++a) &#123; window.requestAnimationFrame = window[c[a] + &quot;RequestAnimationFrame&quot;]; window.cancelAnimationFrame = window[c[a] + &quot;CancelAnimationFrame&quot;] || window[c[a] + &quot;CancelRequestAnimationFrame&quot;] &#125; if (!window.requestAnimationFrame) &#123; window.requestAnimationFrame = function (h, e) &#123; var d = new Date().getTime(); var f = Math.max(0, 16 - (d - b)); var g = window.setTimeout(function () &#123; h(d + f) &#125;, f); b = d + f; return g &#125; &#125; if (!window.cancelAnimationFrame) &#123; window.cancelAnimationFrame = function (d) &#123; clearTimeout(d) &#125; &#125; &#125;());
+
+    /*
+     * Point class
+     */
+    var Point = (function () &#123;
+        function Point(x, y) &#123;
+            this.x = (typeof x !== 'undefined') ? x : 0;
+            this.y = (typeof y !== 'undefined') ? y : 0;
+        &#125;
+        Point.prototype.clone = function () &#123;
+            return new Point(this.x, this.y);
+        &#125;;
+        Point.prototype.length = function (length) &#123;
+            if (typeof length == 'undefined')
+                return Math.sqrt(this.x * this.x + this.y * this.y);
+            this.normalize();
+            this.x *= length;
+            this.y *= length;
+            return this;
+        &#125;;
+        Point.prototype.normalize = function () &#123;
+            var length = this.length();
+            this.x /= length;
+            this.y /= length;
+            return this;
+        &#125;;
+        return Point;
+    &#125;)();
+
+    /*
+     * Particle class
+     */
+    var Particle = (function () &#123;
+        function Particle() &#123;
+            this.position = new Point();
+            this.velocity = new Point();
+            this.acceleration = new Point();
+            this.age = 0;
+        &#125;
+        Particle.prototype.initialize = function (x, y, dx, dy) &#123;
+            this.position.x = x;
+            this.position.y = y;
+            this.velocity.x = dx;
+            this.velocity.y = dy;
+            this.acceleration.x = dx * settings.particles.effect;
+            this.acceleration.y = dy * settings.particles.effect;
+            this.age = 0;
+        &#125;;
+        Particle.prototype.update = function (deltaTime) &#123;
+            this.position.x += this.velocity.x * deltaTime;
+            this.position.y += this.velocity.y * deltaTime;
+            this.velocity.x += this.acceleration.x * deltaTime;
+            this.velocity.y += this.acceleration.y * deltaTime;
+            this.age += deltaTime;
+        &#125;;
+        Particle.prototype.draw = function (context, image) &#123;
+            function ease(t) &#123;
+                return (--t) * t * t + 1;
+            &#125;
+            var size = image.width * ease(this.age / settings.particles.duration);
+            context.globalAlpha = 1 - this.age / settings.particles.duration;
+            context.drawImage(image, this.position.x - size / 2, this.position.y - size / 2, size, size);
+        &#125;;
+        return Particle;
+    &#125;)();
+
+    /*
+     * ParticlePool class
+     */
+    var ParticlePool = (function () &#123;
+        var particles,
+            firstActive = 0,
+            firstFree = 0,
+            duration = settings.particles.duration;
+
+        function ParticlePool(length) &#123;
+            // create and populate particle pool
+            particles = new Array(length);
+            for (var i = 0; i &lt; particles.length; i++)
+                particles[i] = new Particle();
+        &#125;
+        ParticlePool.prototype.add = function (x, y, dx, dy) &#123;
+            particles[firstFree].initialize(x, y, dx, dy);
+
+            // handle circular queue
+            firstFree++;
+            if (firstFree == particles.length) firstFree = 0;
+            if (firstActive == firstFree) firstActive++;
+            if (firstActive == particles.length) firstActive = 0;
+        &#125;;
+        ParticlePool.prototype.update = function (deltaTime) &#123;
+            var i;
+
+            // update active particles
+            if (firstActive &lt; firstFree) &#123;
+                for (i = firstActive; i &lt; firstFree; i++)
+                    particles[i].update(deltaTime);
+            &#125;
+            if (firstFree &lt; firstActive) &#123;
+                for (i = firstActive; i &lt; particles.length; i++)
+                    particles[i].update(deltaTime);
+                for (i = 0; i &lt; firstFree; i++)
+                    particles[i].update(deltaTime);
+            &#125;
+
+            // remove inactive particles
+            while (particles[firstActive].age &gt;= duration &amp;&amp; firstActive != firstFree) &#123;
+                firstActive++;
+                if (firstActive == particles.length) firstActive = 0;
+            &#125;
+
+
+        &#125;;
+        ParticlePool.prototype.draw = function (context, image) &#123;
+            // draw active particles
+            if (firstActive &lt; firstFree) &#123;
+                for (i = firstActive; i &lt; firstFree; i++)
+                    particles[i].draw(context, image);
+            &#125;
+            if (firstFree &lt; firstActive) &#123;
+                for (i = firstActive; i &lt; particles.length; i++)
+                    particles[i].draw(context, image);
+                for (i = 0; i &lt; firstFree; i++)
+                    particles[i].draw(context, image);
+            &#125;
+        &#125;;
+        return ParticlePool;
+    &#125;)();
+
+    /*
+     * Putting it all together
+     */
+    (function (canvas) &#123;
+        var context = canvas.getContext('2d'),
+            particles = new ParticlePool(settings.particles.length),
+            particleRate = settings.particles.length / settings.particles.duration, // particles/sec
+            time;
+
+        // get point on heart with -PI &lt;= t &lt;= PI
+        function pointOnHeart(t) &#123;
+            return new Point(
+                160 * Math.pow(Math.sin(t), 3),
+                130 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25
+            );
+        &#125;
+
+        // creating the particle image using a dummy canvas
+        var image = (function () &#123;
+            var canvas = document.createElement('canvas'),
+                context = canvas.getContext('2d');
+            canvas.width = settings.particles.size;
+            canvas.height = settings.particles.size;
+            // helper function to create the path
+            function to(t) &#123;
+                var point = pointOnHeart(t);
+                point.x = settings.particles.size / 2 + point.x * settings.particles.size / 350;
+                point.y = settings.particles.size / 2 - point.y * settings.particles.size / 350;
+                return point;
+            &#125;
+            // create the path
+            context.beginPath();
+            var t = -Math.PI;
+            var point = to(t);
+            context.moveTo(point.x, point.y);
+            while (t &lt; Math.PI) &#123;
+                t += 0.01; // baby steps!
+                point = to(t);
+                context.lineTo(point.x, point.y);
+            &#125;
+            context.closePath();
+            // create the fill
+            context.fillStyle = '#ea80b0';
+            context.fill();
+            // create the image
+            var image = new Image();
+            image.src = canvas.toDataURL();
+            return image;
+        &#125;)();
+
+        // render that thing!
+        function render() &#123;
+            // next animation frame
+            requestAnimationFrame(render);
+
+            // update time
+            var newTime = new Date().getTime() / 1000,
+                deltaTime = newTime - (time || newTime);
+            time = newTime;
+
+            // clear canvas
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            // create new particles
+            var amount = particleRate * deltaTime;
+            for (var i = 0; i &lt; amount; i++) &#123;
+                var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
+                var dir = pos.clone().length(settings.particles.velocity);
+                particles.add(canvas.width / 2 + pos.x, canvas.height / 2 - pos.y, dir.x, -dir.y);
+            &#125;
+
+            // update and draw particles
+            particles.update(deltaTime);
+            particles.draw(context, image);
+        &#125;
+
+        // handle (re-)sizing of the canvas
+        function onResize() &#123;
+            canvas.width = canvas.clientWidth;
+            canvas.height = canvas.clientHeight;
+        &#125;
+        window.onresize = onResize;
+
+        // delay rendering bootstrap
+        setTimeout(function () &#123;
+            onResize();
+            render();
+        &#125;, 10);
+    &#125;)(document.getElementById('pinkboard'));
+
+
+
+
+&lt;/script&gt;
+</code></pre>
+</BODY>
+<!--                           
+<audio controls>
+  <source src="Alan Walker-Faded.mp3" type="audio/ogg">
+  <source src="Alan Walker-Faded.mp3" type="audio/mpeg">
+</audio >
+     -->
+</HTML>
+</script></body></html>
     </article>
     
     <div class="read-nums">
@@ -394,7 +750,7 @@
     <div class="article-catelogue--wrapper">
       <div class="catelogue catelogue-1">
         <h3>目录</h3>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86"><span class="toc-number">1.</span> <span class="toc-text">不定积分</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5%E5%92%8C%E6%80%A7%E8%B4%A8"><span class="toc-number">1.1.</span> <span class="toc-text">概念和性质</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E4%B9%891%EF%BC%9A%E5%A6%82%E6%9E%9C%E5%9C%A8%E5%8C%BA%E9%97%B4I%E4%B8%8A%E5%8F%AF%E5%AF%BC%E5%87%BD%E6%95%B0%E4%B8%BAF-x-%E7%9A%84%E5%AF%BC%E5%87%BD%E6%95%B0%E4%B8%BAf-x-%E5%8D%B3%E5%AF%B9%E4%BB%BB%E6%84%8Fx-inI%E9%83%BD%E6%9C%89"><span class="toc-number">1.1.1.</span> <span class="toc-text">定义1：如果在区间I上可导函数为F(x)的导函数为f(x),即对任意x\inI都有</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#F-x-f-x-%E6%88%96dF-x-f-x-dx-%E9%82%A3%E4%B9%88%E5%87%BD%E6%95%B0F-x-%E5%B0%B1%E7%A7%B0%E4%B8%BAf-x-%E5%9C%A8%E5%8C%BA%E9%97%B4I%E4%B8%8A%E7%9A%84%E5%8E%9F%E5%87%BD%E6%95%B0%E3%80%82"><span class="toc-number">1.1.2.</span> <span class="toc-text">F(x)&#x3D;f(x)或dF(x)&#x3D;f(x)dx,那么函数F(x)就称为f(x)在区间I上的原函数。</span></a></li></ol></li></ol></li></ol>
+        
       </div>
       
         <div class="catelogue catelogue-2">
