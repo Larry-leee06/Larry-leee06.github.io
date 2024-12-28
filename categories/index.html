@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"个人介绍","path":"2024/12/01/个人介绍/"},{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"做题记录","path":"2024/12/04/做题记录/"},{"title":"大学英语","path":"2024/12/01/大学英语/"},{"title":"小宅站","path":"2024/11/17/小宅站/"},{"title":"高数不定积分","path":"2024/12/01/高数不定积分/"}]`)
+  const posts = JSON.parse(`[{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"个人介绍","path":"2024/12/01/个人介绍/"},{"title":"做题记录","path":"2024/12/04/做题记录/"},{"title":"小宅站","path":"2024/11/17/小宅站/"},{"title":"大学英语","path":"2024/12/01/大学英语/"},{"title":"高数不定积分","path":"2024/12/01/高数不定积分/"},{"title":"太极拳","path":"2024/11/21/太极拳/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -331,11 +331,11 @@
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
-        <span>今天</span>
+        <span>1周前</span>
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
-        <span>39天</span>
+        <span>46天</span>
       </p>
       <p class="main-left--subtitle">
         <span>当前版本：</span>
@@ -416,7 +416,7 @@
   }
 
   setOperateItem()
-  const musics = JSON.parse(`[{"name":"晴天","artist":"周杰伦","url":"music/晴天.mp3","cover":"https://ts1.cn.mm.bing.net/th?id=OIP-C.SYhCcAiin2y_rs06vEEjGgHaEo&w=176&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"},{"name":"多余的解释","artist":"许嵩","url":"music/多余的解释.mp3","cover":"https://ts4.cn.mm.bing.net/th?id=OIP-C.QCKfSwnuvIeSx4fTv_ptHAAAAA&w=190&h=190&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"},{"name":"龙卷风","artist":"周杰伦","url":"music/龙卷风.mp3","cover":"https://tse4-mm.cn.bing.net/th/id/OIP-C.K6lCfGrf4vVXqCdlR__U7wHaG1?w=170&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"},{"name":"戒烟","artist":"李荣浩","url":"music/戒烟.mp3","cover":"https://ts4.cn.mm.bing.net/th?id=OIP-C.BGkYeNbqYjpDVXtso2uwlgAAAA&w=212&h=212&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"},{"name":"失控","artist":"井迪儿","url":"music/失控.mp3","cover":"https://ts2.cn.mm.bing.net/th?id=OIP-C.QGmrlKiDpKrH9L_MrgLoAwAAAA&w=212&h=212&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"},{"name":"明明就","artist":"周杰伦","url":"music/明明就.mp3","cover":"https://ts4.cn.mm.bing.net/th?id=OIP.GwGeJXhqipRvd-r_Zn2orgHaJj&w=234&h=300&c=10&rs=1&qlt=99&bgcl=fffffe&r=0&o=6&dpr=1.5&pid=MultiSMRSV2Source"}]`)
+  const musics = JSON.parse(`[{"name":"晴天","artist":"周杰伦","url":"music/晴天.mp3","cover":"https://ts1.cn.mm.bing.net/th?id=OIP-C.SYhCcAiin2y_rs06vEEjGgHaEo&w=176&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"},{"name":"多余的解释","artist":"许嵩","url":"music/多余的解释.mp3","cover":"https://ts4.cn.mm.bing.net/th?id=OIP-C.QCKfSwnuvIeSx4fTv_ptHAAAAA&w=190&h=190&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"},{"name":"龙卷风","artist":"周杰伦","url":"music/龙卷风.mp3","cover":"https://tse4-mm.cn.bing.net/th/id/OIP-C.K6lCfGrf4vVXqCdlR__U7wHaG1?w=170&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"},{"name":"戒烟","artist":"李荣浩","url":"music/戒烟.mp3","cover":"https://ts4.cn.mm.bing.net/th?id=OIP-C.BGkYeNbqYjpDVXtso2uwlgAAAA&w=212&h=212&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"},{"name":"失控","artist":"井迪儿","url":"music/失控.mp3","cover":"https://ts2.cn.mm.bing.net/th?id=OIP-C.QGmrlKiDpKrH9L_MrgLoAwAAAA&w=212&h=212&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"},{"name":"明明就","artist":"周杰伦","url":"music/明明就.mp3","cover":"https://ts4.cn.mm.bing.net/th?id=OIP.GwGeJXhqipRvd-r_Zn2orgHaJj&w=234&h=300&c=10&rs=1&qlt=99&bgcl=fffffe&r=0&o=6&dpr=1.5&pid=MultiSMRSV2Source"},{"name":"China-X","artist":"徐梦圆","url":"music/China.mp3","cover":"https://ts2.cn.mm.bing.net/th?id=OIP-C.neKGIxbYBk7LwX2yehiCngEsEq&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"}]`)
   const ap = new APlayer({
     container: document.querySelector('#aplayer'),
     audio: musics,
