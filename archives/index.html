@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"大学英语","path":"2024/12/01/大学英语/"},{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"做题记录","path":"2024/12/04/做题记录/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"小宅站","path":"2024/11/17/小宅站/"},{"title":"个人介绍","path":"2024/12/01/个人介绍/"},{"title":"高数不定积分","path":"2024/12/01/高数不定积分/"},{"title":"测试","path":"2024/12/31/测试/"}]`)
+  const posts = JSON.parse(`[{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"做题记录","path":"2024/12/04/做题记录/"},{"title":"个人介绍","path":"2024/12/01/个人介绍/"},{"title":"大学英语","path":"2024/12/01/大学英语/"},{"title":"测试","path":"2025/01/02/测试-1/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"小宅站","path":"2024/11/17/小宅站/"},{"title":"测试","path":"2024/12/31/测试/"},{"title":"高数不定积分","path":"2024/12/01/高数不定积分/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -270,7 +270,7 @@
         </a>
         <a href="/archives">
           <div>
-            <span>2 </span>
+            <span>3 </span>
             <span>归档</span>
           </div>
         </a>
@@ -327,11 +327,11 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>8 篇</span>
+        <span>9 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
-        <span>昨天</span>
+        <span>今天</span>
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
@@ -390,13 +390,6 @@
                                     
                                         <li class="archive-list__post">
                                             <div>
-                                                <a href="/2024/12/01/大学英语/">大学英语</a>
-                                                <span>12月01日</span>
-                                            </div>
-                                        </li>
-                                    
-                                        <li class="archive-list__post">
-                                            <div>
                                                 <a href="/2024/12/04/做题记录/">做题记录</a>
                                                 <span>12月04日</span>
                                             </div>
@@ -411,7 +404,7 @@
                                     
                                         <li class="archive-list__post">
                                             <div>
-                                                <a href="/2024/12/01/高数不定积分/">高数不定积分</a>
+                                                <a href="/2024/12/01/大学英语/">大学英语</a>
                                                 <span>12月01日</span>
                                             </div>
                                         </li>
@@ -420,6 +413,34 @@
                                             <div>
                                                 <a href="/2024/12/31/测试/">测试</a>
                                                 <span>12月31日</span>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="archive-list__post">
+                                            <div>
+                                                <a href="/2024/12/01/高数不定积分/">高数不定积分</a>
+                                                <span>12月01日</span>
+                                            </div>
+                                        </li>
+                                    
+                                </ul>
+                            </li>
+                        
+                    </ul>
+                </li>
+            
+                <li class="archive-list__year">
+                    <h2>2025年</h2>
+                    <ul>
+                        
+                            <li class="archive-list__month">
+                                <h3>第01の月</h3>
+                                <ul>
+                                    
+                                        <li class="archive-list__post">
+                                            <div>
+                                                <a href="/2025/01/02/测试-1/">测试</a>
+                                                <span>01月02日</span>
                                             </div>
                                         </li>
                                     
