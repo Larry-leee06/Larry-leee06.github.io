@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>查询并跳转示例</title>
+  <style>
+    /* 页面整体设置 */
+    body, html {
+      height: 100%; /* 使页面高度为100% */
+      margin: 0; /* 去掉默认边距 */
+      display: flex; /* 启用flex布局 */
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      background-image: url('2.jpg'); /* 设置背景图，替换为你自己的图片路径 */
+      background-size: cover; /* 背景图覆盖整个页面 */
+      background-position: center; /* 背景图居中 */
+      background-repeat: no-repeat; /* 背景图不重复 */
+      font-family: Arial, sans-serif; /* 设置字体 */
+    }
+
+    /* 容器样式 */
+    .container {
+      text-align: center;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.8); /* 半透明背景色 */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px; /* 限制容器最大宽度，防止过大 */
+      box-sizing: border-box; /* 确保padding不影响容器宽度 */
+    }
+
+    /* 输入框样式 */
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%; /* 使输入框宽度自适应容器 */
+      max-width: 300px; /* 限制输入框的最大宽度 */
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* 按钮样式 */
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 输入框和按钮 -->
+    <input type="text" id="queryInput" placeholder="请输入查询内容...">
+    <button id="searchButton">查询</button>
+  </div>
+
+  <script>
+    document.getElementById("searchButton").addEventListener("click", function() {
+      var query = document.getElementById("queryInput").value.trim();
+      
+      if (query) {
+        // 根据输入的内容决定跳转的页面
+        var pageUrl = "";
+        
+        // 根据查询内容判断跳转页面
+        if (query.toLowerCase() === "page1") {
+          pageUrl = "page1.html";  // 页面1
+        } else if (query.toLowerCase() === "page2") {
+          pageUrl = "page2.html";  // 页面2
+        } else if (query.toLowerCase() === "page3") {
+          pageUrl = "page3.html";  // 页面3
+        } else {
+          alert("没有找到相关页面，请检查输入！");
+          return; // 如果没有找到匹配页面，返回，不跳转
+        }
+
+        // 跳转到相应的页面
+        window.location.href = pageUrl;
+      } else {
+        alert("请输入查询内容！");
+      }
+    });
+  </script>
+
+</body>
+</html>

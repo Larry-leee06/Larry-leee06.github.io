@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"做题记录","path":"2024/12/04/做题记录/"},{"title":"个人介绍","path":"2024/12/01/个人介绍/"},{"title":"小宅站","path":"2024/11/17/小宅站/"},{"title":"高数不定积分","path":"2024/12/01/高数不定积分/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"大学英语","path":"2024/12/01/大学英语/"}]`)
+  const posts = JSON.parse(`[{"title":"做题记录","path":"2024/12/04/做题记录/"},{"title":"Hello World","path":"2024/11/16/hello-world/"},{"title":"个人介绍","path":"2024/12/01/个人介绍/"},{"title":"小宅站","path":"2024/11/17/小宅站/"},{"title":"大学英语","path":"2024/12/01/大学英语/"},{"title":"太极拳","path":"2024/11/21/太极拳/"},{"title":"测试","path":"2024/12/31/测试/"},{"title":"高数不定积分","path":"2024/12/01/高数不定积分/"},{"title":"","path":"2024/12/31/测试/测试/page1/"},{"title":"","path":"2024/12/31/测试/测试/login/"},{"title":"","path":"2024/12/31/测试/测试/page2/"},{"title":"","path":"2024/12/31/测试/测试/register/"},{"title":"","path":"2024/12/31/测试/测试/page3/"},{"title":"","path":"2024/12/31/测试/测试/按钮/"},{"title":"","path":"2024/12/31/测试/测试/按钮2/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -327,7 +327,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>7 篇</span>
+        <span>15 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
@@ -335,7 +335,7 @@
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
-        <span>46天</span>
+        <span>49天</span>
       </p>
       <p class="main-left--subtitle">
         <span>当前版本：</span>
@@ -358,6 +358,66 @@
       <div class="index-article">
         <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
         <div class="index-article--box">
+          <img class="index-article--cover" data-cover="imgs/like.jpg" alt="" />
+        </div>
+        <div class="index-article--content">
+          <a href="/2024/12/31/%E6%B5%8B%E8%AF%95/%E6%B5%8B%E8%AF%95/%E6%8C%89%E9%92%AE2/"> </a>
+          <div>
+            
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
+    
+      <div class="index-article">
+        <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="imgs/like.jpg" alt="" />
+        </div>
+        <div class="index-article--content">
+          <a href="/2024/12/31/%E6%B5%8B%E8%AF%95/%E6%B5%8B%E8%AF%95/register/"> </a>
+          <div>
+            
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
+    
+      <div class="index-article">
+        <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="imgs/like.jpg" alt="" />
+        </div>
+        <div class="index-article--content">
+          <a href="/2024/12/31/%E6%B5%8B%E8%AF%95/%E6%B5%8B%E8%AF%95/page2/"> </a>
+          <div>
+            
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
+    
+      <div class="index-article">
+        <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="imgs/like.jpg" alt="" />
+        </div>
+        <div class="index-article--content">
+          <a href="/2024/12/31/%E6%B5%8B%E8%AF%95/%E6%B5%8B%E8%AF%95/login/"> </a>
+          <div>
+            
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
+    
+      <div class="index-article">
+        <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
+        <div class="index-article--box">
           <img class="index-article--cover" data-cover="imgs/like.jpg" alt="做题记录" />
         </div>
         <div class="index-article--content">
@@ -370,65 +430,68 @@
         </div>
       </div>
     
-      <div class="index-article">
-        <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
-        <div class="index-article--box">
-          <img class="index-article--cover" data-cover="imgs/like.jpg" alt="大学英语" />
-        </div>
-        <div class="index-article--content">
-          <a href="/2024/12/01/%E5%A4%A7%E5%AD%A6%E8%8B%B1%E8%AF%AD/">大学英语 </a>
-          <div>
-            
-              <p>
-                <a class="post-category-link" href="/categories/%E9%98%B2%E6%8C%82%E7%A7%91/">防挂科</a>
-              </p>
-            
-            
-              <p>
-                <a class="-link" href="/tags/%E7%BF%BB%E8%AF%91/" rel="tag">翻译</a>
-              </p>
-            
-          </div>
-          <div class="bg"></div>
-        </div>
-      </div>
-    
-      <div class="index-article">
-        <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
-        <div class="index-article--box">
-          <img class="index-article--cover" data-cover="imgs/like.jpg" alt="太极拳" />
-        </div>
-        <div class="index-article--content">
-          <a href="/2024/11/21/%E5%A4%AA%E6%9E%81%E6%8B%B3/">太极拳 </a>
-          <div>
-            
-            
-              <p>
-                <a class="-link" href="/tags/%E5%A4%AA%E6%9E%81%E6%8B%B3/" rel="tag">太极拳</a>
-              </p>
-            
-          </div>
-          <div class="bg"></div>
-        </div>
-      </div>
-    
-      <div class="index-article">
-        <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
-        <div class="index-article--box">
-          <img class="index-article--cover" data-cover="imgs/like.jpg" alt="Hello World" />
-        </div>
-        <div class="index-article--content">
-          <a href="/2024/11/16/hello-world/">Hello World </a>
-          <div>
-            
-            
-          </div>
-          <div class="bg"></div>
-        </div>
-      </div>
-    
   </div>
   <div class="index-center">
+    
+      <div class="index-article">
+        <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="imgs/hello.jpg" alt="" />
+        </div>
+        <div class="index-article--content">
+          <a href="/2024/12/31/%E6%B5%8B%E8%AF%95/%E6%B5%8B%E8%AF%95/%E6%8C%89%E9%92%AE/"> </a>
+          <div>
+            
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
+    
+      <div class="index-article">
+        <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="imgs/hello.jpg" alt="" />
+        </div>
+        <div class="index-article--content">
+          <a href="/2024/12/31/%E6%B5%8B%E8%AF%95/%E6%B5%8B%E8%AF%95/page3/"> </a>
+          <div>
+            
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
+    
+      <div class="index-article">
+        <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="imgs/hello.jpg" alt="" />
+        </div>
+        <div class="index-article--content">
+          <a href="/2024/12/31/%E6%B5%8B%E8%AF%95/%E6%B5%8B%E8%AF%95/page1/"> </a>
+          <div>
+            
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
+    
+      <div class="index-article">
+        <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="imgs/hello.jpg" alt="测试" />
+        </div>
+        <div class="index-article--content">
+          <a href="/2024/12/31/%E6%B5%8B%E8%AF%95/">测试 </a>
+          <div>
+            
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
     
       <div class="index-article">
         <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
@@ -445,53 +508,19 @@
         </div>
       </div>
     
-      <div class="index-article">
-        <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
-        <div class="index-article--box">
-          <img class="index-article--cover" data-cover="imgs/hello.jpg" alt="高数不定积分" />
-        </div>
-        <div class="index-article--content">
-          <a href="/2024/12/01/%E9%AB%98%E6%95%B0%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/">高数不定积分 </a>
-          <div>
-            
-              <p>
-                <a class="category-link" href="/categories/%E9%98%B2%E6%8C%82%E7%A7%91/">防挂科</a>
-              </p>
-            
-            
-              <p>
-                <a class="-link" href="/tags/%E9%AB%98%E6%95%B0%E4%BF%9D%E5%91%BD/" rel="tag">高数保命</a>
-              </p>
-            
-          </div>
-          <div class="bg"></div>
-        </div>
-      </div>
-    
-      <div class="index-article">
-        <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
-        <div class="index-article--box">
-          <img class="index-article--cover" data-cover="imgs/hello.jpg" alt="小宅站" />
-        </div>
-        <div class="index-article--content">
-          <a href="/2024/11/17/%E5%B0%8F%E5%AE%85%E7%AB%99/">小宅站 </a>
-          <div>
-            
-            
-          </div>
-          <div class="bg"></div>
-        </div>
-      </div>
-    
   </div>
   <div class="index-right">
     <div class="index-right-wrapper">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%98%B2%E6%8C%82%E7%A7%91/">防挂科</a></li></ul>
       <ul class="tags" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E6%95%B0%E4%BF%9D%E5%91%BD/" rel="tag">高数保命</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BF%BB%E8%AF%91/" rel="tag">翻译</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%AA%E6%9E%81%E6%8B%B3/" rel="tag">太极拳</a></li></ul>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">2024年12月</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">2024年11月</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">2024年12月</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">2024年11月</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 </div>
+
+  <div class="page">
+    <span class="page-number current">1</span><a class="page-number" href="/archives/2024/page/2/">2</a><a class="extend next" rel="next" href="/archives/2024/page/2/">&gt;</a>
+  </div>
 
 
 <script>
